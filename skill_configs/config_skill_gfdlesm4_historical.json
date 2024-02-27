@@ -1,0 +1,480 @@
+{
+  "bias_calc_class": "SkillAssessment",
+  "execution_control": {
+    "alloc": "alcaps",
+    "feature": "--qos=high",
+    "memory": 173,
+    "option": "kestrel",
+    "walltime": 4
+  },
+  "jobs": [
+    {
+      "base_dset": "temperature_2m",
+      "base_fps": [
+        "/projects/alcaps/era5_surface/era5_surface_1980.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1981.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1982.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1983.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1984.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1985.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1986.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1987.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1988.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1989.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1990.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1991.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1992.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1993.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1994.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1995.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1996.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1997.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1998.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1999.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2000.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2001.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2002.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2003.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2004.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2005.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2006.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2007.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2008.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2009.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2010.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2011.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2012.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2013.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2014.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2015.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2016.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2017.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2018.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2019.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2020.nc"
+      ],
+      "base_handler": "DataHandlerNCforERA",
+      "bias_feature": "temperature_2m",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/tas_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19700101-19891231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tas_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tas_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tas_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "temporal_slice": [
+          3650,
+          18250,
+          null
+        ]
+      },
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_temperature_2m.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "temperature_2m",
+      "base_fps": [
+        "/projects/alcaps/era5_surface/era5_surface_1980.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1981.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1982.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1983.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1984.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1985.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1986.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1987.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1988.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1989.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1990.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1991.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1992.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1993.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1994.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1995.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1996.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1997.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1998.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1999.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2000.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2001.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2002.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2003.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2004.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2005.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2006.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2007.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2008.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2009.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2010.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2011.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2012.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2013.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2014.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2015.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2016.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2017.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2018.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2019.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2020.nc"
+      ],
+      "base_handler": "DataHandlerNCforERA",
+      "bias_feature": "temperature_max_2m",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmax_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19700101-19891231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmax_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmax_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmax_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "temporal_slice": [
+          3650,
+          18250,
+          null
+        ]
+      },
+      "daily_reduction": "max",
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_temperature_max_2m.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "temperature_2m",
+      "base_fps": [
+        "/projects/alcaps/era5_surface/era5_surface_1980.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1981.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1982.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1983.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1984.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1985.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1986.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1987.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1988.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1989.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1990.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1991.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1992.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1993.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1994.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1995.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1996.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1997.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1998.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1999.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2000.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2001.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2002.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2003.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2004.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2005.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2006.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2007.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2008.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2009.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2010.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2011.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2012.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2013.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2014.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2015.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2016.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2017.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2018.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2019.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2020.nc"
+      ],
+      "base_handler": "DataHandlerNCforERA",
+      "bias_feature": "temperature_min_2m",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmin_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19700101-19891231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmin_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmin_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/tasmin_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "temporal_slice": [
+          3650,
+          18250,
+          null
+        ]
+      },
+      "daily_reduction": "min",
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_temperature_min_2m.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "relativehumidity_2m",
+      "base_fps": [
+        "/projects/alcaps/era5_surface/era5_surface_1980.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1981.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1982.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1983.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1984.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1985.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1986.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1987.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1988.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1989.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1990.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1991.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1992.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1993.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1994.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1995.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1996.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1997.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1998.nc",
+        "/projects/alcaps/era5_surface/era5_surface_1999.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2000.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2001.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2002.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2003.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2004.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2005.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2006.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2007.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2008.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2009.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2010.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2011.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2012.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2013.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2014.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2015.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2016.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2017.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2018.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2019.nc",
+        "/projects/alcaps/era5_surface/era5_surface_2020.nc"
+      ],
+      "base_handler": "DataHandlerNCforERA",
+      "bias_feature": "relativehumidity_2m",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/hurs_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19700101-19891231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/hurs_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/hurs_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/hurs_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "temporal_slice": [
+          3650,
+          18250,
+          null
+        ]
+      },
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_relativehumidity_2m.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "ghi",
+      "base_fps": [
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2000.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2001.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2002.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2003.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2004.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2005.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2006.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2007.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2008.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2009.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2010.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2011.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2012.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2013.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2014.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2015.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2016.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2017.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2018.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2019.h5"
+      ],
+      "bias_feature": "rsds",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "nsrdb_agg": 625,
+        "nsrdb_smoothing": 0,
+        "nsrdb_source_fp": "/projects/alcaps/cmip6/nsrdb_clearsky.h5",
+        "temporal_slice": [
+          3650,
+          10950,
+          null
+        ]
+      },
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_ghi.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "clearsky_ratio",
+      "base_fps": [
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2000.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2001.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2002.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2003.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2004.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2005.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2006.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2007.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2008.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2009.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2010.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2011.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2012.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2013.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2014.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2015.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2016.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2017.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2018.h5",
+        "/kfs2/pdatasets/NSRDB/current/nsrdb_2019.h5"
+      ],
+      "bias_feature": "clearsky_ratio",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/rsds_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "nsrdb_agg": 625,
+        "nsrdb_smoothing": 0,
+        "nsrdb_source_fp": "/projects/alcaps/cmip6/nsrdb_clearsky.h5",
+        "temporal_slice": [
+          3650,
+          10950,
+          null
+        ]
+      },
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_clearsky_ratio.h5",
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    },
+    {
+      "base_dset": "pr",
+      "base_fps": [
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1980.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1981.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1982.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1983.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1984.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1985.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1986.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1987.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1988.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1989.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1990.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1991.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1992.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1993.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1994.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1995.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1996.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1997.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1998.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_1999.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2000.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2001.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2002.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2003.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2004.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2005.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2006.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2007.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2008.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2009.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2010.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2011.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2012.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2013.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2014.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2015.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2016.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2017.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2018.h5",
+        "/projects/alcaps/daymet/DaymetV4_VIC4_pr_2019.h5"
+      ],
+      "bias_feature": "pr",
+      "bias_fps": [
+        "/projects/alcaps/cmip6/GFDL-ESM4/pr_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19700101-19891231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/pr_day_GFDL-ESM4_historical_r1i1p1f1_gr1_19900101-20091231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/pr_day_GFDL-ESM4_historical_r1i1p1f1_gr1_20100101-20141231.nc",
+        "/projects/alcaps/cmip6/GFDL-ESM4/pr_day_GFDL-ESM4_ssp585_r1i1p1f1_gr1_20150101-20341231.nc"
+      ],
+      "bias_handler_kwargs": {
+        "temporal_slice": [
+          3650,
+          18250,
+          null
+        ]
+      },
+      "daily_reduction": null,
+      "fp_out": "./bc_gfdlesm4_historical_r1i1p1f1_pr.h5",
+      "match_zero_rate": true,
+      "max_workers": null,
+      "shape": [
+        29,
+        52
+      ],
+      "smooth_extend": 2,
+      "target": [
+        23.2,
+        -129
+      ]
+    }
+  ],
+  "log_level": "DEBUG",
+  "log_pattern": "./logs/sup3r_bias_{node_index}.log"
+}
