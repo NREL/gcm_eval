@@ -25,6 +25,7 @@ not to recommend the best climate model and dataset for a given analysis, but
 instead to provide a reference to facilitate the selection of climate models
 and datasets in subsequent work.
 
+The NREL software record for this repository is SWR-24-37
 
 Acknowledgments
 ===============
