@@ -3,6 +3,18 @@ CONUS
 #####
 
 
+Map of CONUS
+============
+
+.. image:: ../_static/region_maps/map_conus.png
+
+GCM Historical Skill Summary
+============================
+
+.. raw:: html
+   :file: ../_static/skill_tables/skill_conus.html
+
+
 Change in Temperature (Celsius)
 ===============================
 
