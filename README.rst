@@ -27,6 +27,9 @@ climate model and dataset for a given analysis, but instead to provide a
 reference to facilitate the selection of climate models and datasets in
 subsequent work.
 
+For interactive comparisons of GCM projections, check out the regional 
+results `here <https://nrel.github.io/gcm_eval/regions/conus.html>`_.
+
 The NREL software record for this repository is SWR-24-37
 
 Acknowledgments
