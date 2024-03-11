@@ -68,9 +68,18 @@ if __name__ == '__main__':
             f.write(f'{"="*len(title)}\n\n')
             f.write('.. raw:: html\n')
             f.write(f'   :file: ../_static/skill_tables/skill_{tag}.html\n')
+            f.write('|\n|\n')
+
+            title = 'GCM Changes from 1980-2019 to 2050-2059'
+            f.write(f'\n{title}\n')
+            f.write(f'{"="*len(title)}\n')
+            f.write('.. raw:: html\n')
+            f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_ssp245.html\n')
+            f.write('.. raw:: html\n')
+            f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_ssp585.html\n')
 
             for var, title in VARS.items():
-                f.write(f'\n{title}\n')
+                f.write(f'\n|\n{title}\n')
                 f.write(f'{"="*len(title)}\n\n')
                 f.write('.. raw:: html\n')
                 f.write(f'   :file: ../_static/trend_plots/{tag}_{var}.html\n')
