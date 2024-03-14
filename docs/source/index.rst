@@ -21,5 +21,7 @@
    Offshore Wind Region Atlantic <regions/atlantic.rst>
    Offshore Wind Region Pacific <regions/pacific.rst>
    Offshore Wind Region Gulf <regions/gulf.rst>
+   Utility Partner TVA <regions/tva.rst>
+   Utility Partner Southern Company <regions/southern_company.rst>
 
 .. include:: ../../README.rst

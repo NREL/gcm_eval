@@ -9,7 +9,8 @@ REGIONS = ['CONUS',
            'Northwest', 'Ohio Valley', 'South', 'Southeast',
            'Southwest', 'Upper Midwest', 'West',
            'MRO', 'NPCC', 'RF', 'SERC', 'Texas RE', 'WECC',
-           'Atlantic', 'Pacific', 'Gulf']
+           'Atlantic', 'Pacific', 'Gulf',
+           'TVA', 'Southern Company']
 
 NOAA = ['Northeast', 'Northern Rockies and Plains',
         'Northwest', 'Ohio Valley', 'South', 'Southeast',
@@ -68,7 +69,7 @@ if __name__ == '__main__':
             f.write(f'{"="*len(title)}\n\n')
             f.write('.. raw:: html\n')
             f.write(f'   :file: ../_static/skill_tables/skill_{tag}.html\n')
-            f.write('|\n|\n')
+            f.write('\n|\n|\n\n')
 
             title = 'GCM Changes from 1980-2019 to 2050-2059'
             f.write(f'\n{title}\n')
@@ -79,7 +80,7 @@ if __name__ == '__main__':
             f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_ssp585.html\n')
 
             for var, title in VARS.items():
-                f.write(f'\n|\n{title}\n')
+                f.write(f'\n|\n\n{title}\n')
                 f.write(f'{"="*len(title)}\n\n')
                 f.write('.. raw:: html\n')
                 f.write(f'   :file: ../_static/trend_plots/{tag}_{var}.html\n')
