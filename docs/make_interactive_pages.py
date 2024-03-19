@@ -19,17 +19,18 @@ NERC = ['MRO', 'NPCC', 'RF', 'SERC', 'Texas RE', 'WECC']
 OFFSHORE = ['Atlantic', 'Pacific', 'Gulf']
 UTILITIES = ['TVA', 'Southern Company']
 
-VARS = {'t2m': 'Change in Temperature (Celsius)',
-        't2m_degf': 'Change in Temperature (Fahrenheit)',
-        't2m_max': 'Daily Max Temperature (Celsius)',
-        't2m_max_degf': 'Daily Max Temperature (Fahrenheit)',
-        't2m_min': 'Daily Min Temperature (Celsius)',
-        't2m_min_degf': 'Daily Min Temperature (Fahrenheit)',
+VARS = {'t2m': 'Change in Temperature',
+        't2m_max': 'Daily Max Temperature',
+        't2m_min': 'Daily Min Temperature',
         'rh': 'Change in Relative Humidity',
         'pr': 'Change in Precipitation',
         'ws100m': 'Change in Windspeed',
         'ghi': 'Change in Global Horizontal Irradiance',
         }
+
+PLOT_DESC = ('All of the following plots are interactive. Try hovering your '
+             'mouse over data points, clicking and dragging, scrolling, and '
+             'double clicking on the legends.')
 
 
 if __name__ == '__main__':
@@ -64,7 +65,7 @@ if __name__ == '__main__':
             f.write(f'{"="*len(title)}\n\n')
             f.write(f'.. image:: ../_static/region_maps/map_{tag}.png\n')
 
-            title = 'GCM Historical Skill Summary'
+            title = 'GCM Historical Skill Summary (1980-2019)'
             f.write(f'\n{title}\n')
             f.write(f'{"="*len(title)}\n\n')
             f.write('.. raw:: html\n')
@@ -74,10 +75,10 @@ if __name__ == '__main__':
             title = 'GCM Changes from 1980-2019 to 2050-2059'
             f.write(f'\n{title}\n')
             f.write(f'{"="*len(title)}\n')
-            f.write('.. raw:: html\n')
-            f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_ssp245.html\n')
-            f.write('.. raw:: html\n')
-            f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_ssp585.html\n')
+            f.write(f'{PLOT_DESC}\n\n')
+            for scenario in ('ssp245', 'ssp370', 'ssp585'):
+                f.write('.. raw:: html\n')
+                f.write(f'   :file: ../_static/scatter_plots/{tag}_scatter_{scenario}.html\n')
 
             for var, title in VARS.items():
                 f.write(f'\n|\n\n{title}\n')
