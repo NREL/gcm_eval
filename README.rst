@@ -12,13 +12,13 @@ publicly available climate change datasets can be used for this purpose, but
 the selection of inputs from the myriad of available models and datasets is a
 nuanced and subjective process. In this work, we assess datasets from various
 global climate models (GCMs) from the Coupled Model Intercomparison Project
-(CMIP6). We present evaluations of their skills with respect to the historical
-climate and comparisons of their future projections of climate change. We
-present the results for different climatic and energy system regions and
-include interactive figures in the accompanying software repository. Previous
-work has presented similar GCM evaluations, but none have presented variables
-and metrics specifically intended for comprehensive energy systems analysis
-including impacts on energy demand, thermal cooling, hydropower, water
+Phase 6 (CMIP6). We present evaluations of their skills with respect to the
+historical climate and comparisons of their future projections of climate
+change. We present the results for different climatic and energy system regions
+and include interactive figures in the accompanying software repository.
+Previous work has presented similar GCM evaluations, but none have presented
+variables and metrics specifically intended for comprehensive energy systems
+analysis including impacts on energy demand, thermal cooling, hydropower, water
 availability, solar energy generation, and wind energy generation. We focus on
 GCM output meteorological variables that directly affect these energy system
 components including the representation of extreme values that can drive grid
@@ -32,6 +32,9 @@ results `here <https://nrel.github.io/gcm_eval/regions/conus.html>`_.
 All of the plots after the skill tables are interactive. Try hovering your
 mouse over data points, clicking and dragging, scrolling, and double clicking
 on the legends.
+
+An NREL technical report is in preparation and will accompany this repository
+with a discussion of the methods and results.
 
 The NREL software record for this repository is SWR-24-37
 
