@@ -8,6 +8,9 @@ Map of NERC Region WECC
 
 .. image:: ../_static/region_maps/map_wecc.png
 
+Note that we used a simple state mask, and the region may not perfectly match the spatial boundary of the true NERC region.
+
+
 GCM Historical Skill Summary (1980-2019)
 ========================================
 
@@ -20,7 +23,7 @@ GCM Historical Skill Summary (1980-2019)
 
 GCM Changes from 1980-2019 to 2050-2059
 =======================================
-All of the plots after the skill table are interactive. Try hovering your mouse over data points, clicking and dragging, scrolling, and double clicking on the legends.
+All of the following plots are interactive. Try hovering your mouse over data points, clicking and dragging, scrolling, and double clicking on the legends.
 
 .. raw:: html
    :file: ../_static/scatter_plots/wecc_scatter_ssp245.html
@@ -39,16 +42,16 @@ Change in Temperature
 
 |
 
-Daily Max Temperature
-=====================
+Daily Maximum Temperature Events
+================================
 
 .. raw:: html
    :file: ../_static/trend_plots/wecc_t2m_max.html
 
 |
 
-Daily Min Temperature
-=====================
+Daily Minimum Temperature Events
+================================
 
 .. raw:: html
    :file: ../_static/trend_plots/wecc_t2m_min.html
@@ -68,6 +71,14 @@ Change in Precipitation
 
 .. raw:: html
    :file: ../_static/trend_plots/wecc_pr.html
+
+|
+
+Annual Minimum Precipitation Events
+===================================
+
+.. raw:: html
+   :file: ../_static/trend_plots/wecc_pr_min.html
 
 |
 

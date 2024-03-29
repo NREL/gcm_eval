@@ -8,6 +8,7 @@ Map of NOAA Region Northern Rockies and Plains
 
 .. image:: ../_static/region_maps/map_northern_rockies_and_plains.png
 
+
 GCM Historical Skill Summary (1980-2019)
 ========================================
 
@@ -20,7 +21,7 @@ GCM Historical Skill Summary (1980-2019)
 
 GCM Changes from 1980-2019 to 2050-2059
 =======================================
-All of the plots after the skill table are interactive. Try hovering your mouse over data points, clicking and dragging, scrolling, and double clicking on the legends.
+All of the following plots are interactive. Try hovering your mouse over data points, clicking and dragging, scrolling, and double clicking on the legends.
 
 .. raw:: html
    :file: ../_static/scatter_plots/northern_rockies_and_plains_scatter_ssp245.html
@@ -39,16 +40,16 @@ Change in Temperature
 
 |
 
-Daily Max Temperature
-=====================
+Daily Maximum Temperature Events
+================================
 
 .. raw:: html
    :file: ../_static/trend_plots/northern_rockies_and_plains_t2m_max.html
 
 |
 
-Daily Min Temperature
-=====================
+Daily Minimum Temperature Events
+================================
 
 .. raw:: html
    :file: ../_static/trend_plots/northern_rockies_and_plains_t2m_min.html
@@ -68,6 +69,14 @@ Change in Precipitation
 
 .. raw:: html
    :file: ../_static/trend_plots/northern_rockies_and_plains_pr.html
+
+|
+
+Annual Minimum Precipitation Events
+===================================
+
+.. raw:: html
+   :file: ../_static/trend_plots/northern_rockies_and_plains_pr_min.html
 
 |
 

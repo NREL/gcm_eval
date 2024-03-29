@@ -20,10 +20,11 @@ OFFSHORE = ['Atlantic', 'Pacific', 'Gulf']
 UTILITIES = ['TVA', 'Southern Company']
 
 VARS = {'t2m': 'Change in Temperature',
-        't2m_max': 'Daily Max Temperature',
-        't2m_min': 'Daily Min Temperature',
+        't2m_max': 'Daily Maximum Temperature Events',
+        't2m_min': 'Daily Minimum Temperature Events',
         'rh': 'Change in Relative Humidity',
         'pr': 'Change in Precipitation',
+        'pr_min': 'Annual Minimum Precipitation Events',
         'ws100m': 'Change in Windspeed',
         'ghi': 'Change in Global Horizontal Irradiance',
         }
@@ -63,7 +64,11 @@ if __name__ == '__main__':
             title = f'Map of {region}'
             f.write(f'\n{title}\n')
             f.write(f'{"="*len(title)}\n\n')
-            f.write(f'.. image:: ../_static/region_maps/map_{tag}.png\n')
+            f.write(f'.. image:: ../_static/region_maps/map_{tag}.png\n\n')
+            if 'NERC' in region:
+                f.write('Note that we used a simple state mask, and the '
+                        'region may not perfectly match the spatial boundary '
+                        'of the true NERC region.\n\n')
 
             title = 'GCM Historical Skill Summary (1980-2019)'
             f.write(f'\n{title}\n')
