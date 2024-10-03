@@ -69,6 +69,10 @@ if __name__ == '__main__':
                 f.write('Note that we used a simple state mask, and the '
                         'region may not perfectly match the spatial boundary '
                         'of the true NERC region.\n\n')
+            elif region in UTILITIES:
+                f.write('Note that we used a simple state mask, and the '
+                        'region will not perfectly match the '
+                        'true Utility boundary.\n\n')
 
             title = 'GCM Historical Skill Summary (1980-2019)'
             f.write(f'\n{title}\n')
